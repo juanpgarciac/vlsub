@@ -1860,7 +1860,7 @@ function dump_zip(url, dir, subfileName)
     return false 
   end
   
-  local tmpFileName = dir..slash..subfileName..".gz"
+  local tmpFileName = dir..slash.."tmpsubt.gz"
   if not file_touch(tmpFileName) then
     vlc.msg.dbg("[VLsub] Cant touch:"..tmpFileName)
     if openSub.conf.os == "win" then
